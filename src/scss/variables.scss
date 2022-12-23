@@ -1,0 +1,28 @@
+@font-face {
+  font-weight: 800;
+  font-family: Roboto;
+  src: url("src/fonts/Roboto-Bold.ttf");
+}
+ 
+@font-face {
+  font-weight: 400;
+  font-family: Roboto;
+  src: url("src/fonts/Roboto-Regular.ttf");
+}
+ 
+@font-face {
+  font-weight: 600;
+  font-family: Roboto;
+  src: url("src/fonts/Roboto-Medium.ttf");
+}
+ 
+:root {
+  --black: #08020D;
+  --gray: #E0E0E0;
+  --dark-gray: #CACACA;
+  --dark: #3C3B3D;
+  --green: #34C176;
+  --orange: #F89202;
+  --purple: #5328A1;
+  --red: #95390C;
+}

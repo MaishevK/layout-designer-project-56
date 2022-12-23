@@ -1,0 +1,72 @@
+@media (mix-width: 1240px) {
+  body {
+    width: 1200px;
+  }
+
+  .section-1 {
+    max-width: 570px;
+  }
+
+  h1 {
+    font-size: 60px;
+    line-height: 90px;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    font-size: 38px;
+    line-height: 57px;
+    font-weight: 800;
+    text-transform: uppercase
+  }
+
+  .form-1 {
+    min-width: 270px;
+    min-height: 50px;
+    padding-left: 20px;
+    margin-bottom: 1.5em;
+    border: 2px solid var(--dark-gray);
+    border-radius: 3px;
+  }
+
+  .btn-1 {
+    margin: 20px 30px;
+    background: var(--green);
+    border-radius: 5px;
+  }
+
+  .sr-only {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    padding: 0;
+
+    overflow: hidden;
+
+    white-space: nowrap;
+
+    border: 0;
+  }
+
+  .bg1::before {
+    position: absolute;
+    top: 0;
+    z-index: 100;
+  
+    width: 100%;
+    height: 100%;
+  
+    background-image: var(--background-image);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.1;
+  
+    content: "";
+  }
+
+
+
+
+}
