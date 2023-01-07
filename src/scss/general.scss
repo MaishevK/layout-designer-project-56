@@ -1,8 +1,124 @@
+
 html {
-  font-family: Roboto, sans-serif;
-  font-size: 18px;
-  line-height: 1.5;
+  font: normal 18px/1.5 Roboto, sans-serif;
   color: var(--dark-gray);
  
   background: var(--black);
 }
+
+.find {
+  background-color: var(--dark);
+
+  color: #757575;
+
+  width: 248px;
+
+  border-radius: 12.5px;
+}
+
+.bg-1 {
+  background-image: url("../images/banner.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.access-font {
+  font-family: Arial, sans-serif;
+  font-weight: normal;
+  font-size: 13.3px;
+  line-height: 15.29px;
+}
+
+.field-font {
+  font-family: Roboto, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16.41px;
+}
+
+.form-1::placeholder {
+  color: var(--white);
+}
+
+.btn-access {
+  padding: 20px 30px;
+  background: var(--green);
+  border-radius: 5px;
+}
+
+.w-24px {
+  width: 24px;
+} 
+
+.h-24px {
+  height: 24px;
+}
+
+/*.pt-25px { padding-top: 25px; }*/
+
+.pt-150px { padding-top: 150px; }
+
+.pl-10px { padding-left: 10px;}
+
+.pb-200px { padding-bottom: 200px; }
+
+.m-0 { margin: 0; }
+
+.mt-31px { margin-top: 31px; }
+
+.ml-16px { margin-left: 16px; }
+
+/*.ml-24px { margin-left: 24px; }*/
+
+/*.ml-90px { margin-left: 90px; }*/
+
+/*.ml-119px { margin-left: 119px; }*/
+
+/*.mr-121px { margin-right: 121px; }
+*/
+.mb-17px { margin-bottom: 17px; }
+
+/*.mg-rem75 {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}*/
+
+.fs-11px { font-size: 11px; }
+
+.lh-16px5 { line-height: 16.5px; }
+
+.text-align-center { text-align: center; }
+
+.transparent { background: transparent; }
+
+.color-white { color: var(--white); }
+
+.color-dark-gray { color: var(--dark-gray); }
+
+.border-none { border: none; }
+
+.flex { display: flex; }
+
+.flex-column { flex-direction: column; }
+
+.flex-grow { flex-grow: 1; }
+
+.justify-center { justify-content: center;}
+
+/*.justify-right { justify-content: right; }
+*/
+.align-center { align-items: center; }
+
+.uppercase { text-transform: uppercase; }
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0; 
+} 
+
