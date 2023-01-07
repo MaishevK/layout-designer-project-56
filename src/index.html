@@ -8,24 +8,41 @@
   <link rel="stylesheet" href="./css/app.css">
 </head>
 <body>
-  <section id="page-description" class="section-1 bg-1">
-    <div class="header"></div>
-    <div class="banner">
-      <h1 class="h1">Онлайн музыка где угодно</h1>
-      <h2 class="h2">без ограничений</h2>
-      <p>Получите доступ всего за несколько шагов. Заполните форму ниже и откройте мир музыки</p>
-      <div class="">
-        <form>
-          <label for="fi-1" class="sr-only">Имя</label>
-          <input id="fi-1" type="text" class="form-1" placeholder="Имя">
-          <label for="fi-2" class="sr-only">E-mail</label>
-          <input id="fi-2" type="text" class="form-1" placeholder="E-mail">
-        </form>
-        <label for="fi-3" class="sr-only">E-mail</label>
-        <input id="fi-3" type="submit" value="Получить доступ" class="form-1">
-      </div>
-    </div>
+  <div class="bg-1">
+    <section id="page-description">
+        <div class="header uppercase fs-11px lh-16px5">
+          <div class="flex header-img">
+            <div class="img-note w-24px h-24px"></div>
+            <div class="flex align-center ml-16px color-white">music box</div>
+          </div>
+          <div class="flex main ml-1 align-center color-white">главная</div>
+          <div class="flex ml-2 align-center color-white">каталог</div>
+          <div class="flex ml-2 align-center color-white">исполнители</div>
+          <div class="flex ml-2 align-center color-white">контакты</div>
+          <div class="flex flex-grow header-find mr-121px">
+            <div class="find flex align-center pl-10px color-white">поиск...</div>
+          </div>
 
-  </section>
+        </div>
+        <div class="flex flex-column align-center banner">
+          <h1 class="string text-align-center uppercase color-white m-0">Онлайн музыка где угодно</h1>
+          <h2 class="string text-align-center uppercase color-white m-0">без ограничений</h2>
+          <p class="string text-align-center string-access color-white">Получите доступ всего за несколько шагов. Заполните форму ниже и откройте мир музыки</p>
+          <div class="form" >
+            <form>
+              <label for="fi-1" class="sr-only color-white">Имя</label>
+              <input id="fi-1" type="text" class="form-1 form-name transparent field-font color-white" placeholder="Имя">
+              <label for="fi-2" class="sr-only">E-mail</label>
+              <input id="fi-2" type="text"  class="form-1 form-email transparent field-font color-white" placeholder="E-mail">
+            </form>
+            <div class="btn-access flex justify-center">
+              <label for="fi-3" class="sr-only">Access</label>
+              <input id="fi-3" class="access-font color-white uppercase transparent border-none" type="submit" value="Получить доступ">
+            </div>
+          </div>
+        </div>
+      </section>
+  </div>
+  
 </body>
 </html>
