@@ -1,74 +1,79 @@
 @media (max-width: 1240px) {
 
-  h2 {
-    font-size: 30px;
-    line-height: 45px;
-    font-weight: 800;
-    text-transform: uppercase
-  }
+h1 {
+  font-size: 30px;
+  line-height: 45px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.first {
+  padding-top: 29px;
+  padding-left: 20px;
+  padding-right: 20px;
   
-  h2 {
-    font-size: 18px;
-    line-height: 27px;
-    font-weight: 800;
-    text-transform: uppercase
-  }
+  &-img {
+  margin-bottom: 17px;
 
-  .header {
-    padding-top: 29px;
-    padding-left: 20px;
-    padding-right: 20px;
   }
+  &-find {
+  padding-top: 18px;
+  height: 25px;
+  }
+}
 
-  .header-img {
-    margin-bottom: 17px;
-  }
+.img-note {
+  width: 24px;
+  height: 24px;
+  background-image: url("../images/logo.svg");
+  @include img;
+}
 
-  .img-note {
-    width: 24px;
-    height: 24px;
-    background-image: url("../images/logo.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  
-  .header-find {
-    padding-top: 18px;
-    height: 25px;
-  }
+.form {
+width: 100%;
 
-  .form-1 {
+  &-1 {
     width: calc(100% - 26px);
     min-height: 50px;
     margin-bottom: 24px;
     padding-left: 20px;
-    border: 2px solid var(--dark-gray);
-    border-radius: 3px; }
-
-
-  .banner {
-    padding: 78px 20px 200px;
+    @include border-2px-dark-gray-radius;
   }
 
-  .form {
-  width: 100%;
-  }
-
-  .form-name {
+  &-name {
     margin-right: 0; }
-
-  .form-email {
+    
+  &-email {
     margin-left: 0; }
-
-  .string {
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  .string-access {
-    margin-top: 16px;
-    margin-bottom: 16px;
-  }
-
 }
 
+.banner {
+  padding: 78px 20px 200px;
+}
+
+.string {
+  margin-left: 0;
+  margin-right: 0;
+
+  &-access {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    }
+}
+
+.pricing-item {
+  margin-bottom: 50px;
+}
+
+.pricing-items {
+  flex-direction: column;
+}
+
+}
