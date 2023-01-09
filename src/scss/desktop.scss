@@ -12,58 +12,59 @@
     font-weight: bold;
   }
 
-.header {
+.first {
   display: flex;
 
   padding-top: 25px;
+  
+  &-find {
+  justify-content: right;
+  margin-right: 121px; 
+}
 }
 
 .img-note {
   width: 24px;
   height: 24px;
   margin-left: 119px;
-  background-image: url("../images/logo.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
-.header-find {
-  justify-content: right;
-  margin-right: 121px; 
+  background-image: url("../images/logo.svg");
+  @include img;
 }
 
 .banner {
   padding: 150px 20px 200px;
 }
 
-.form-1 {
-  max-width: 570px;
-  min-width: 270px;
-  min-height: 50px;
-  padding-left: 20px;
-  
-  
-  margin-bottom: 1.5rem;
-  border: 2px solid var(--dark-gray);
-  border-radius: 3px; }
+.form {
 
-.form-name {
-  margin-right: 0.75rem;
-}
+  &-1 {
+    max-width: 570px;
+    min-width: 270px;
+    min-height: 50px;
+    padding-left: 20px;
+    
+    margin-bottom: 1.5rem;
+    @include border-2px-dark-gray-radius;
+  }
+  
+  &-name {
+    margin-right: 0.75rem;
+  }
 
-.form-email {
-  margin-left: 0.75rem;
+  &-email {
+    margin-left: 0.75rem;
+  }
 }
 
 .string {
   margin-left: 119px;
   margin-right: 121px;
-}
 
-.string-access {
-  margin-top: 31px;
+  &-access {
+    margin-top: 31px;
+  }
 }
-
 .ml-1 {
   margin-left: 90px;
 }
@@ -72,5 +73,7 @@
   margin-left: 24px;
 }
 
+.pricing-item {
+  width: 320px;
 }
-
+}
