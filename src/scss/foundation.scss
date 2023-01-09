@@ -1,9 +1,11 @@
-.grid-6 {
-    display: grid;
-    grid-template-rows: repeat(6, 1fr);
-    grid-template-columns: repeat(6, 1fr);
-  
-    width: 100vw;
-    height: 100vh;
-}
+@media (min-width: 1240px) {
 
+    .grid-6 {
+        display: grid;
+        grid-template-rows: repeat(9, 1fr);
+        grid-template-columns: repeat(6, 1fr);
+        grid-gap: 0 47px;
+        width: 100vw;
+        height: 100vh;
+    }
+}
