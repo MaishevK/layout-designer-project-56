@@ -6,9 +6,14 @@ $color-gray: #757575;
   background-position: center;
 }
 
-@mixin border-2px-dark-gray-radius {
+@mixin border-2px-dark-gray-radius-3px {
   border: 2px solid var(--dark-gray);
   border-radius: 3px;
+} 
+
+@mixin border-2px-dark-gray-radius-5px {
+  border: 2px solid var(--dark-gray);
+  border-radius: 5px;
 } 
 
 html {
@@ -18,57 +23,6 @@ html {
   background: var(--black);
 }
 
-.find {
-  width: 248px;
-
-  border-radius: 12.5px;
-
-  color: #757575;
-  background-color: var(--dark);
-}
-
-.bg-banner {
-  background-image: url("../images/banner.png");
-  @include img;
-}
-
-.pointer{
-  cursor: pointer;
-}
-
-.field-font {
-  font-family: Roboto, sans-serif;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 16.41px;
-}
-
-.form-1::placeholder {
-  color: var(--white);
-}
-
-.find::placeholder {
-  color: $color-gray;
-}
-
-.btn {
-  padding: 20px 30px;
-  border-radius: 5px;
-
-  line-height: 1;
-  text-align: center;
-
-  &-access {
-    background: var(--green);
-  }
-
-  &-access-font {
-    font-family: Arial, sans-serif;
-    font-weight: normal;
-    font-size: 13.3px;
-    line-height: 15.29px;
-  }
-}
 .w-24px {
   width: 24px;
 } 
@@ -81,14 +35,20 @@ html {
   height: 615px;
 }
 
-/*.pt-25px { padding-top: 25px; }*/
-
 .p-0 {
   padding: 0
 }
 
 .p-1rem5 {
   padding: 0 1.5rem;
+}
+
+.pt-30px {
+  padding-top: 30px;
+}
+
+.pb-25px {
+  padding-bottom: 25px;
 }
 
 .pt-24px {
@@ -123,26 +83,10 @@ html {
   margin: 0;
 }
 
-
-
-.mt-31px {
-  margin-top: 31px;
-}
-
-
-
 .ml-16px {
   margin-left: 16px;
 }
 
-/*.ml-24px { margin-left: 24px; }*/
-
-/*.ml-90px { margin-left: 90px; }*/
-
-/*.ml-119px { margin-left: 119px; }*/
-
-/*.mr-121px { margin-right: 121px; }
-*/
 .mb-17px {
   margin-bottom: 17px;
 }
@@ -155,13 +99,12 @@ html {
   margin: 0 25px;
 }
 
-/*.mg-rem75 {
-  margin-left: 0.75rem;
-  margin-right: 0.75rem;
-}*/
-
 .fs-11px {
   font-size: 11px;
+}
+
+.fs-12px {
+  font-size: 12px;
 }
 
 .fs-12px8 {
@@ -174,6 +117,10 @@ html {
 
 .fs-24px {
   font-size: 24px; }
+
+.fs-30px {
+  font-size: 30px;
+}
 
 .fs-32px {
   font-size: 32px;
@@ -213,6 +160,81 @@ html {
   background: transparent;
 }
 
+.find {
+  width: 248px;
+
+  border-radius: 12.5px;
+
+  color: #757575;
+  background-color: var(--dark);
+}
+
+.bg-banner {
+  background-image: url("../images/banner.png");
+  @include img;
+}
+
+.pointer{
+  cursor: pointer;
+}
+
+.field-font {
+  font-family: Roboto, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16.41px;
+}
+
+.access {   /*555555555555*/
+  min-width: 270px;
+}
+
+.form-1::placeholder {
+  color: var(--white);
+}
+
+.find::placeholder {
+  color: $color-gray;
+}
+
+.btn { /*kkkkkkkkkkkkkk*/
+  padding: 20px 30px;
+  border: 2px solid var(--dark-gray);;
+  line-height: 1;
+  text-align: center;
+  border-radius: 5px;
+
+
+  &-access {
+    grid-column: 1 / 3;
+    grid-row: 2;
+    width: 100%;
+    height: 57px;
+    background: var(--green);
+    border: var(--green);
+    margin: 0 auto;
+    cursor: pointer;
+  }
+
+  &-access-font {
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    font-size: 13.3px;
+    line-height: 15.29px;
+  }
+  &-news {   /*666666666*/
+    display: block;
+    box-sizing: border-box;
+    width: 135px;
+    height: 53px;
+    padding: 17px;
+    font-size: 12.8px;
+    line-height: 19.2px;
+    color: var(--dark-gray);
+    text-decoration: none;
+  }
+}
+
 .color {
   &-white {
     color: var(--white);
@@ -235,6 +257,10 @@ html {
   border-radius: 1rem;
 }
 
+.b-radius-5px {
+  border-radius: 5px;
+}
+
 .block {
   display: block;
 }
@@ -250,8 +276,6 @@ html {
   justify-content: center;
 }
 
-/*.justify-right { justify-content: right; }
-*/
 .align-center {
   align-items: center;
 }
@@ -292,9 +316,29 @@ html {
 .pricing-btn {
   margin: 40px 0 64px;
 
-  @include border-2px-dark-gray-radius;
+  @include border-2px-dark-gray-radius-5px;
 }
 
 .page-pricing-footer {
   margin: 0 auto;
+}
+
+.news-head {
+  display: flex;
+  justify-content: center; }
+
+.news-author {  /*444444444444*/
+  padding-bottom: 48px;
+}
+
+.author-img {
+  background-image: url(../images/avatar.png);
+  width: 19px;
+  height: 19px;
+}
+
+.news-author-name {
+  line-height: 19.2px;
+  color: var(--orange);
+  padding: 0 16px;
 }
