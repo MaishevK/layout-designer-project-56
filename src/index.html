@@ -8,9 +8,9 @@
   <link rel="stylesheet" href="./css/app.css">
 </head>
 <body>
-  <section id="page-description" class="bg-banner">
-    <div class="first uppercase fs-11px lh-1e5">
-      <div class="flex first-img">
+  <section id="page-description" class="first bg-banner">
+    <div class="header uppercase fs-11px lh-1e5">
+      <div class="flex header-img">
         <div class="img-note w-24px h-24px"></div>
         <div class="flex align-center ml-16px color-dark-gray lh-12px9">music box</div>
       </div>
@@ -18,29 +18,24 @@
       <a href=# class="flex ml-2 align-center color-dark-gray lh-12px9 text-decoration-none">каталог</a>
       <a href=# class="flex ml-2 align-center color-dark-gray lh-12px9 text-decoration-none">исполнители</a>
       <a href=# class="flex ml-2 align-center color-dark-gray lh-12px9 text-decoration-none">контакты</a>
-      <form class="flex flex-grow first-find mr-121px">
+      <form class="flex flex-grow header-find">
         <label for="fi-1" class="sr-only">Поиск</label>
         <input class="find flex align-center pl-10px lh-15px3 color-white border-none" type="text" placeholder="поиск...">
       </form>
     </div>
-    <div class="flex flex-column align-center banner">
-      <h1 class="string text-align-center uppercase color-white m-0">Онлайн музыка где угодно</h1>
-      <h2 class="string text-align-center uppercase color-white m-0">без ограничений</h2>
-      <p class="string text-align-center string-access color-white">Получите доступ всего за несколько шагов. Заполните форму ниже и откройте мир музыки</p>
-      <div class="form">
-        <form>
-          <label for="fi-1" class="sr-only color-white">Имя</label>
-          <input id="fi-1" type="text" class="form-1 form-name transparent field-font color-white" placeholder="Имя">
-          <label for="fi-2" class="sr-only">E-mail</label>
-          <input id="fi-2" type="text" class="form-1 form-email transparent field-font color-white" placeholder="E-mail">
-        </form>
-          <a href="#">
-            <div class="btn btn-access">
-            <label for="fi-3" class="sr-only">Access</label>
-            <input id="fi-3" class="btn-access-font color-white pointer uppercase transparent border-none p-0" type="submit" value="Получить доступ">
-            </div>
-          </a>
+    <div class="banner">
+      <div class="flex flex-column">
+        <h1 class="string text-align-center uppercase color-white m-0">Онлайн музыка где угодно</h1>
+        <h2 class="string text-align-center uppercase color-white m-0">без ограничений</h2>
+        <p class="string text-align-center string-access color-white">Получите доступ всего за несколько шагов. Заполните форму ниже и откройте мир музыки</p>
       </div>
+      <form class="form access">
+        <label for="fi-1" class="sr-only color-white">Имя</label>
+        <input id="fi-1" type="text" class="form-1 form-name transparent field-font color-white" placeholder="Имя">
+        <label for="fi-2" class="sr-only">E-mail</label>
+        <input id="fi-2" type="text" class="form-1 form-email transparent field-font color-white" placeholder="E-mail">
+        <input type="submit" class="btn btn-access btn-access-font color-white uppercase text-decoration-none" type="submit" value="Получить доступ">
+      </form>
     </div>
   </section>
   <section id="page-pricing" class="pricing bg-black">
@@ -53,8 +48,8 @@
         </p>
         <a href="#" class="block">
           <div class="btn pricing-btn">
-            <label for="fi-3" class="sr-only">Получить доступ</label>
-            <input id="fi-3" class="fs-16px lh-1e5 color-white uppercase transparent border-none p-0" type="submit" value="Получить доступ">
+            <label for="fi-3" class="sr-only">Оформить</label>
+            <input id="fi-3" class="fs-16px lh-1e5 color-white uppercase transparent border-none p-0" type="submit" value="Оформить">
           </div>
         </a>
         <p class="pricing-footer fs-12px8 lh-1e5 pb-50px m-0">Оплата в месяц. Бесплатный тариф предоставляет доступ ко всей коллекции музыки. Присутствует реклама</p>
@@ -66,8 +61,8 @@
         </p>
         <a href="#" class="block">
           <div class="btn pricing-btn">
-            <label for="fi-3" class="sr-only">Получить доступ</label>
-            <input id="fi-3" class="fs-16px lh-1e5 color-white uppercase transparent border-none m-0" type="submit" value="Получить доступ">
+            <label for="fi-3" class="sr-only">Оформить</label>
+            <input id="fi-3" class="fs-16px lh-1e5 color-white uppercase transparent border-none m-0" type="submit" value="Оформить">
           </div>
         </a>
         <p class="pricing-footer fs-12px8 lh-1e5 pb-50px m-0">Оплата в месяц. Стандартный тариф предоставляет доступ ко всей коллекции музыки в среднем качестве</p>
@@ -79,14 +74,49 @@
         </p>
         <a href="#" class="block">
           <div class="btn pricing-btn">
-            <label for="fi-3" class="sr-only">Получить доступ</label>
-            <input id="fi-3" class="fs-16px lh-1e5 color-white uppercase transparent border-none p-0" type="submit" value="Получить доступ">
+            <label for="fi-3" class="sr-only">Оформить</label>
+            <input id="fi-3" class="fs-16px lh-1e5 color-white uppercase transparent border-none p-0" type="submit" value="Оформить">
           </div>
         </a>
         <p class="pricing-footer fs-12px8 lh-1e5 pb-50px m-0">Оплата в месяц. Премиум тариф предоставляет доступ ко всей коллекции музыки в высоком качестве</p>
       </div>
     </div>
-    <p class="page-pricing-footer fs-16px text-align-center max-width-1200px pt-43px m-0">На всех тарифах возможно прослушивание музыки с мобильных устройств. На премиум тарифе вы можете скачать все композиции на ваше устройство и слушать музыку без подключения к интернету</p>
+    <p class="page-pricing-footer fs-16px text-align-center max-width-1200px pt-43px mh-25px">На всех тарифах возможно прослушивание музыки с мобильных устройств. На премиум тарифе вы можете скачать все композиции на ваше устройство и слушать музыку без подключения к интернету</p>
+  </section>
+  <section id="page-news">
+    <div class="news mh-25px">
+      <h2 class="news-head uppercase color-white pt-100px pb-50px m-0">Последние новости</h2>
+      <div class="news-item news-item-eminem">
+        <img src="./images/Music to Be Murdered By.png" alt="Лицо Эминема">
+        <div class="news-body-eminem">
+          <h3 class="fs color-white m-0">Music to Be Murdered By</h3>
+          <p class="fs-16px lh-1e5 t-30px pb-25px">Новый альбом Eminem "Music to Be Murdered By" уже доступен в нашем сервисе. На альбоме вас ждет 20 новых треков.</p>
+        </div>
+        <div class="news-footer-eminem">
+          <div class="flex news-author">
+            <div class="author-img"></div>
+            <div class="news-author-name fs-12px uppercase">Music box</div>
+            <div class="data fs-12px">17/01/2020</div>
+          </div>
+          <a href="#" class="btn btn-news uppercase transparent">К альбому</a>
+        </div>
+      </div>
+      <div class="news-item news-item-ozborn">
+        <img src="./images/Ordinary Man.png" alt="Лицо Озборна">
+        <div class="news-body-ozborn">
+          <h3 class="fs color-white m-0">Ordinary Man</h3>
+          <p class="fs-16px lh-1e5 t-30px pb-25px">Легенда рока Оззи Озборн спустя 10 лет выпустил новый фльбом Ordinary Man. Слушайте в числе первых на Music Box</p>
+        </div>
+        <div class="news-footer-ozborn">
+          <div class="flex news-author">
+            <div class="author-img"></div>
+            <div class="news-author-name fs-12px uppercase">Music box</div>
+            <div class="data fs-12px">24/02/2020</div>
+          </div>
+          <a href="#" class="btn btn-news uppercase transparent">К альбому</a>
+        </div>
+      </div>
+    </div>
   </section>
 </body>
 </html>
