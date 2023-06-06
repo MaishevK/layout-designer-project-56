@@ -14,19 +14,17 @@ h2 {
   text-transform: uppercase;
 }
 
-.first {
+.header {  /*ttttttt*/
   padding-top: 29px;
   padding-left: 20px;
-  padding-right: 20px;
-  
-  &-img {
-  margin-bottom: 17px;
+  padding-right: 20px; 
 
-  }
-  &-find {
-  padding-top: 18px;
-  height: 25px;
-  }
+  &-img { /*fffff*/
+    margin-bottom: 17px; }
+
+  &-find {   /*fgfff*/
+    padding-top: 18px;
+    height: 25px; }
 }
 
 .img-note {
@@ -36,22 +34,14 @@ h2 {
   @include img;
 }
 
-.form {
-width: 100%;
-
-  &-1 {
-    width: calc(100% - 26px);
-    min-height: 50px;
-    margin-bottom: 24px;
-    padding-left: 20px;
-    @include border-2px-dark-gray-radius;
-  }
-
-  &-name {
-    margin-right: 0; }
-    
-  &-email {
-    margin-left: 0; }
+.form-1 {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 50px;
+  margin-bottom: 24px;
+  margin-right: 02px;
+  padding-left: 20px;
+  @include border-2px-dark-gray-radius-3px;
 }
 
 .banner {
@@ -76,4 +66,17 @@ width: 100%;
   flex-direction: column;
 }
 
+.news-item img {
+  display: block;
+  height: 100%;
+  width: 100%;
+
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.fs {
+  font-size: 16px;
+  line-height: 24px;
+}
 }
