@@ -23,6 +23,10 @@ html {
   background: var(--black);
 }
 
+body {
+  margin: 0;
+}
+
 .w-24px {
   width: 24px;
 } 
@@ -95,8 +99,12 @@ html {
   margin-bottom: 24px;
 }
 
-.mh-25px {
+.mx-25px {
   margin: 0 25px;
+}
+
+.mx-auto {
+  margin: 0 auto;
 }
 
 .fs-11px {
@@ -215,7 +223,7 @@ html {
     margin: 0 auto;
     cursor: pointer;
   }
-
+  app-item-iphones
   &-access-font {
     font-family: Arial, sans-serif;
     font-weight: normal;
@@ -342,3 +350,15 @@ html {
   color: var(--orange);
   padding: 0 16px;
 }
+
+.btn-app {
+  display: inline-block;
+  padding: 16px 40px;  
+  border-radius: 32px;
+  border: 1px solid var(--red);
+
+  font-size: 12.8px;
+
+  background-color: var(--red);
+}
+
