@@ -5,6 +5,14 @@
     width: 100vw;
     height: 100vh; }
     
+@mixin grid-12 {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 0 47px;
+    width: 1200px;
+    margin: 0 auto;}
+
 @media (min-width: 1240px) {
 
 
