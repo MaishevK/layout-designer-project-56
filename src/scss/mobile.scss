@@ -1,82 +1,97 @@
 @media (max-width: 1240px) {
 
-h1 {
-  font-size: 30px;
-  line-height: 45px;
-  font-weight: 800;
-  text-transform: uppercase;
-}
+  h1 {
+    font-size: 30px;
+    line-height: 45px;
+    font-weight: 800;
+  }
 
-h2 {
-  font-size: 18px;
-  line-height: 27px;
-  font-weight: 800;
-  text-transform: uppercase;
-}
+  h2 {
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 800;
+  }
 
-.header {  /*ttttttt*/
-  padding-top: 29px;
-  padding-left: 20px;
-  padding-right: 20px; 
+  .header {  /*ttttttt*/
+    padding-top: 29px;
+    padding-left: 20px;
+    padding-right: 20px; 
 
-  &-img { /*fffff*/
-    margin-bottom: 17px; }
+    &-img { /*fffff*/
+      margin-bottom: 17px; }
 
-  &-find {   /*fgfff*/
-    padding-top: 18px;
-    height: 25px; }
-}
+    &-find {   /*fgfff*/
+      padding-top: 18px;
+      height: 25px; }
+  }
 
-.img-note {
-  width: 24px;
-  height: 24px;
-  background-image: url("../images/logo.svg");
-  @include img;
-}
+  .img-note {
+    width: 24px;
+    height: 24px;
 
-.form-1 {
-  box-sizing: border-box;
-  width: 100%;
-  min-height: 50px;
-  margin-bottom: 24px;
-  margin-right: 02px;
-  padding-left: 20px;
-  @include border-2px-dark-gray-radius-3px;
-}
+    background-image: url("../images/logo.svg");
+    @include img;
+  }
 
-.banner {
-  padding: 78px 20px 200px;
-}
+  .form-1 {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 50px;
+    margin-bottom: 24px;
+    margin-right: 02px;
+    padding-left: 20px;
+    @include border-2px-dark-gray-radius-3px;
+  }
 
-.string {
-  margin-left: 0;
-  margin-right: 0;
+  .banner {
+    padding: 78px 20px 200px;
+  }
 
-  &-access {
-    margin-top: 16px;
-    margin-bottom: 16px;
-    }
-}
+  .string {
+    margin-left: 0;
+    margin-right: 0;
 
-.pricing-item {
-  margin-bottom: 50px;
-}
+    &-access {
+      margin-top: 16px;
+      margin-bottom: 16px;
+      }
+  }
 
-.pricing-items {
-  flex-direction: column;
-}
+  .pricing-item {
+    margin-bottom: 50px;
+  }
 
-.news-item img {
-  display: block;
-  height: 100%;
-  width: 100%;
+  .pricing-items {
+    flex-direction: column;
+  }
 
-  margin: 0 auto;
-  margin-bottom: 50px;
-}
+  .page-pricing-footer {
+    margin: 0 25px;
+  }
 
-.fs {
-  font-size: 16px;
-  line-height: 24px;
-}
+  .news-item img {
+    display: block;
+    height: 100%;
+    width: 100%;
+
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+
+  .fs {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .app-item-iphones {
+    display: block;
+    width: 89%;
+    height: auto;
+
+    margin: 0 auto;
+  }
+
+  .page-app-btn {
+    margin-bottom: 100px;
+  }
 }
