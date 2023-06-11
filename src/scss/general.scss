@@ -116,6 +116,10 @@ body {
   margin-bottom: 43px;
 }
 
+.mb-48px {
+  margin-bottom: 48px;
+}
+
 .mx-25px {
   margin: 0 25px;
 }
@@ -196,8 +200,13 @@ body {
   background-color: var(--dark);
 }
 
-.bg-banner {
+.bg-banner-index {
   background-image: url("../images/banner.png");
+  @include img;
+}
+
+.bg-banner-artist {
+  background-image: url("../images/Morten Harket.png");
   @include img;
 }
 
@@ -226,7 +235,7 @@ body {
 
 .btn {
   padding: 20px 30px;
-  border: 2px solid var(--dark-gray);;
+  border: 2px solid var(--dark-gray);
   line-height: 1;
   text-align: center;
   border-radius: 5px;
@@ -367,8 +376,30 @@ body {
 
 .btn-app {
   display: inline-block;
-  padding: 16px 40px;  
+  padding: 16px 40px;
   border-radius: 32px;
+  border: 1px solid var(--red);
+
+  font-size: 12.8px;
+
+  background-color: var(--red);
+}
+
+.btn-mix {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 200px;
+  border: 1px solid var(--purple);
+
+  font-size: 12.8px;
+
+  background-color: var(--purple);
+}
+
+.btn-favorites {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 200px;
   border: 1px solid var(--red);
 
   font-size: 12.8px;
